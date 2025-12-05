@@ -148,7 +148,7 @@ const notifications = [];
   // ============================================
 
   const renderDesktopNavbar = () => (
-    <nav className={` md:flex sticky top-0 z-40 w-full transition-all duration-300 ${
+    <nav className={` hidden md:flex sticky top-0 z-40 w-full transition-all duration-300 ${
       scrolled
         ? 'bg-white/95 dark:bg-slate-900/95 shadow-lg backdrop-blur-md'
         : 'bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm'
@@ -313,10 +313,10 @@ const notifications = [];
                 )}
               </div>
             ) : (
-              <div className="flex gap-2">
+              <div className=" md:hidden flex gap-2">
                 <button
                   onClick={() => navigate('/login')}
-                  className="px-4 py-2.5 text-teal-600 dark:text-teal-400 font-medium rounded-lg hover:bg-teal-50 dark:hover:bg-teal-900/20 transition-all text-sm"
+                  className="  px-4 py-2.5 text-teal-600 dark:text-teal-400 font-medium rounded-lg hover:bg-teal-50 dark:hover:bg-teal-900/20 transition-all text-sm"
                 >
                   Sign In
                 </button>
