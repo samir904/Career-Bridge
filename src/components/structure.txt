@@ -1,0 +1,124 @@
+src/
+├── components/
+│   ├── layouts/
+│   │   ├── HomeLayout.jsx          (Main layout wrapper)
+│   │   ├── AuthLayout.jsx          (For login/register pages)
+│   │   └── AdminLayout.jsx         (For admin pages)
+│   │
+│   ├── common/
+│   │   ├── Navbar.jsx              (Top navigation)
+│   │   ├── Sidebar.jsx             (Mobile sidebar)
+│   │   ├── BottomNav.jsx           (Mobile bottom navigation)
+│   │   ├── Footer.jsx              (Footer section)
+│   │   ├── Loader.jsx              (Loading spinner)
+│   │   ├── Toast.jsx               (Toast notifications)
+│   │   └── Modal.jsx               (Modal dialog)
+│   │
+│   ├── job/
+│   │   ├── JobCard.jsx             (Single job card)
+│   │   ├── JobFilter.jsx           (Search & filter)
+│   │   ├── JobDetailView.jsx       (Full job details)
+│   │   └── ApplyForm.jsx           (Job application form)
+│   │
+│   ├── profile/
+│   │   ├── ProfileHeader.jsx       (User profile section)
+│   │   ├── ProfileForm.jsx         (Edit profile form)
+│   │   ├── ResumCard.jsx           (Resume display)
+│   │   └── SkillsSection.jsx       (Skills management)
+│   │
+│   ├── application/
+│   │   ├── ApplicationCard.jsx     (Application status card)
+│   │   ├── ApplicationTimeline.jsx (Application progress)
+│   │   └── StatusBadge.jsx         (Status indicator)
+│   │
+│   ├── company/
+│   │   ├── CompanyCard.jsx         (Company listing card)
+│   │   ├── CompanyBanner.jsx       (Company header)
+│   │   └── CompanyJobs.jsx         (Company's job listings)
+│   │
+│   └── employer/
+│       ├── JobPostingForm.jsx      (Create/edit job)
+│       ├── ApplicantCard.jsx       (Applicant in list)
+│       └── AnalyticsChart.jsx      (Job analytics)
+│
+├── pages/
+│   ├── auth/
+│   │   ├── LoginPage.jsx
+│   │   ├── RegisterPage.jsx
+│   │   ├── ForgotPasswordPage.jsx
+│   │   └── ResetPasswordPage.jsx
+│   │
+│   ├── public/
+│   │   ├── LandingPage.jsx
+│   │   ├── JobsListPage.jsx
+│   │   ├── JobDetailPage.jsx
+│   │   ├── CompaniesPage.jsx
+│   │   └── CompanyDetailPage.jsx
+│   │
+│   ├── jobseeker/
+│   │   ├── DashboardPage.jsx
+│   │   ├── JobSearchPage.jsx
+│   │   ├── ApplyJobPage.jsx
+│   │   ├── MyApplicationsPage.jsx
+│   │   ├── ApplicationDetailPage.jsx
+│   │   ├── SavedJobsPage.jsx
+│   │   ├── UserProfilePage.jsx
+│   │   ├── EditProfilePage.jsx
+│   │   ├── MyResumesPage.jsx
+│   │   ├── MessagesPage.jsx
+│   │   ├── SettingsPage.jsx
+│   │   └── NotificationsPage.jsx
+│   │
+│   ├── employer/
+│   │   ├── EmployerDashboardPage.jsx
+│   │   ├── ManageJobsPage.jsx
+│   │   ├── CreateJobPage.jsx
+│   │   ├── ViewApplicantsPage.jsx
+│   │   ├── CompanyProfilePage.jsx
+│   │   └── AnalyticsDashboardPage.jsx
+│   │
+│   └── admin/
+│       ├── AdminDashboardPage.jsx
+│       ├── ManageUsersPage.jsx
+│       ├── ModerateJobsPage.jsx
+│       └── ReportsPage.jsx
+│
+├── store/
+│   └── slices/
+│       ├── userSlice.js
+│       ├── authSlice.js
+│       ├── jobSlice.js
+│       ├── applicationSlice.js
+│       ├── companySlice.js
+│       ├── employerSlice.js
+│       ├── notificationSlice.js
+│       ├── messageSlice.js
+│       └── adminSlice.js
+│
+├── services/
+│   ├── api.js                      (Axios instance)
+│   ├── authService.js
+│   ├── jobService.js
+│   ├── applicationService.js
+│   ├── userService.js
+│   └── companyService.js
+│
+├── hooks/
+│   ├── useAuth.js
+│   ├── useJob.js
+│   ├── useApplication.js
+│   ├── useUser.js
+│   └── useDebounce.js
+│
+├── utils/
+│   ├── constants.js
+│   ├── helpers.js
+│   ├── validation.js
+│   └── formatters.js
+│
+├── styles/
+│   ├── globals.css
+│   ├── tailwind.css
+│   └── animations.css
+│
+└── App.jsx
