@@ -56,6 +56,15 @@ function App() {
       <LoadingSpinner />
     )
   }
+  useEffect(() => {
+    // Auto scroll to top when route changes
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth' // Optional: smooth scroll instead of instant
+    });
+  }, [location.pathname]);
+
   return (
     <>
       <Routes>
