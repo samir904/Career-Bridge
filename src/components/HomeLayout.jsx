@@ -127,7 +127,7 @@ const notifications = [];
       ? [
         { label: 'Home', path: '/', icon: Home },
           { label: 'Dashboard', path: '/employer/dashboard', icon: BarChart3 },
-          { label: 'Post Job', path: '/employer/jobs/new', icon: Plus, special: true },
+          { label: 'Post Job', path: '/create-job', icon: Plus, special: true },
           { label: 'Applicants', path: '/employer/applicants', icon: Users },
           { label: 'Profile', path: '/profile', icon: User }
         ]

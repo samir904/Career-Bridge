@@ -75,7 +75,7 @@ function App() {
         <Route path="/employer/applicants" element={<EmployerApplicantsPage />} />
         <Route path="/employer/analytics" element={<EmployerAnalyticsPage />} />
         <Route path='/jobs/search' element={<JobsListPage />} />
-<Route path="create-job" element={<CreateJobPage />} />
+<Route path="/create-job" element={<CreateJobPage />} />
         <Route path="/applications" element={<ApplicationsPage />} />
         <Route path="/applications/:appId" element={<ApplicationDetailPage />} />
         <Route path="/saved-jobs" element={<SavedJobsPage />} />
