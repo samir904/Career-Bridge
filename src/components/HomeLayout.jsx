@@ -148,7 +148,7 @@ const notifications = [];
   // ============================================
 
   const renderDesktopNavbar = () => (
-    <nav className={` hidden md:flex sticky top-0 z-40 w-full transition-all duration-300 ${
+    <nav className={`navbar-desktop  md:flex sticky top-0 z-40 w-full transition-all duration-300 ${
       scrolled
         ? 'bg-white/95 dark:bg-slate-900/95 shadow-lg backdrop-blur-md'
         : 'bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm'

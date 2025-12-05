@@ -1,3 +1,24 @@
 @import "tailwindcss";
 /* Company Card */
+/* Navbar responsive display with !important */
+/* NAVBAR RESPONSIVE DISPLAY */
 
+nav.navbar-desktop {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  nav.navbar-desktop {
+    display: flex !important;
+  }
+}
+
+nav.navbar-mobile {
+  display: block !important;
+}
+
+@media (min-width: 768px) {
+  nav.navbar-mobile {
+    display: none !important;
+  }
+}
