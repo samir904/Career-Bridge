@@ -164,7 +164,7 @@ const notifications = [];
             <div className="w-10 h-10 bg-gradient-to-br from-teal-500 via-teal-600 to-teal-700 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow transform group-hover:scale-105">
               <span className="text-white font-bold text-lg">CB</span>
             </div>
-            <div className="hidden sm:block">
+            <div className=" sm:block">
               <span className="font-bold text-xl bg-gradient-to-r from-teal-600 to-teal-700 bg-clip-text text-transparent">
                 CareerBridge
               </span>

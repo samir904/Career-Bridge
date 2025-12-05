@@ -674,7 +674,7 @@ const HomePage = () => {
                 Sign Up Free
               </button>
               <button
-                onClick={() => navigate('/jobs')}
+                onClick={() => navigate('/jobs/search')}
                 className="px-8 py-3 border-2 border-white text-white rounded-lg font-bold hover:bg-white hover:text-teal-600 transition-all duration-300"
               >
                 Browse Jobs

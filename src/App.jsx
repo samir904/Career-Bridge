@@ -29,6 +29,7 @@ import ResumeViewPage from './pages/ResumeViewPage'
 import ResumesPage from './pages/ResumesPage'
 import UploadResumePage from './pages/UploadResumePage'
 import CreateJobPage from './pages/CreateJobPage'
+import NotFoundPage from './pages/NotFoundPage'
 
 function App() {
   const ProtectedRoute = ({ children }) => {
@@ -88,6 +89,7 @@ function App() {
       {/* View resume */}
       <Route path="/resumes/:resumeId" element={<ResumeViewPage />} />
       
+      <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </>
   )
