@@ -349,7 +349,7 @@ const HomePage = () => {
                 Start Free
               </button>
               <button
-                onClick={() => navigate('/jobs')}
+                onClick={() => navigate('/jobs/search')}
                 className="px-8 py-3 border-2 border-teal-500 text-teal-600 dark:text-teal-400 rounded-lg font-semibold hover:bg-teal-50 dark:hover:bg-teal-900/20 transition-all"
               >
                 <Search size={18} className="inline mr-2" />
